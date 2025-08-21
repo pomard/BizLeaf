@@ -81,10 +81,10 @@ export default function Dashboard() {
     }
   };
 
-  const handleAssignProject = (engineerId: string, engineerName: string) => {
-    showNotification('info', `${engineerName}さんの案件アサイン画面を準備中です`);
-    // 実際の実装では案件アサイン画面に遷移
-  };
+  // const handleAssignProject = (engineerId: string, engineerName: string) => {
+  //   showNotification('info', `${engineerName}さんの案件アサイン画面を準備中です`);
+  //   // 実際の実装では案件アサイン画面に遷移
+  // };
 
   const renderHeader = () => (
     <header className="header">
@@ -106,7 +106,7 @@ export default function Dashboard() {
           {showSearchResults && (
             <div className="search-results">
               <div className="search-results-header">
-                <span>検索結果: "{searchQuery}"</span>
+                <span>検索結果: &quot;{searchQuery}&quot;</span>
                 <button onClick={() => setShowSearchResults(false)}>
                   <Icon name="x" size={14} />
                 </button>
